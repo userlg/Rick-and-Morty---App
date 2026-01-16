@@ -26,7 +26,7 @@ A modern, responsive web application exploring the [Rick and Morty API](https://
 
 ```bash
 # Clone the repository
-git clone https://github.com/userlg/rick-and-morty-app.git
+git clone https://github.com/userlg/Rick-and-Morty---App
 
 # Navigate to the project directory
 cd rick-and-morty-app
