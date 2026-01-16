@@ -50,7 +50,7 @@ describe('GlobalAudioPlayer', () => {
         // Since it's a promise rejection in a handler, we might need to wait a tick or just verify console was called if possible
         // But better to just check if console.error was called.
         // We need to wait for the promise chain to resolve.
-        await new Promise(process.nextTick);
+        await new Promise(resolve => setTimeout(resolve, 0));
         
         expect(consoleSpy).toHaveBeenCalledWith("Playback failed:", expect.any(Error));
         consoleSpy.mockRestore();

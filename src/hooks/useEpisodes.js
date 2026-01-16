@@ -25,6 +25,7 @@ const useEpisodes = (page = 1, filters = {}) => {
     }, 300);
 
     return () => clearTimeout(timeoutId);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page, JSON.stringify(filters)]);
 
   return { data, loading, error };
