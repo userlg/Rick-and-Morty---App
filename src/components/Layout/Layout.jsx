@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import Navbar from './Navbar';
 import Container from './Container';
+import GlobalAudioPlayer from '../UI/GlobalAudioPlayer';
 
 const Layout = () => {
   return (
@@ -11,6 +12,7 @@ const Layout = () => {
           <Outlet />
         </Container>
       </main>
+      <GlobalAudioPlayer />
     </div>
   );
 };

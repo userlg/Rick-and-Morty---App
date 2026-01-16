@@ -125,4 +125,27 @@ describe('Characters Page', () => {
     fireEvent.click(prevButton);
     expect(useCharactersHook.default).toHaveBeenCalledWith(1, { name: 'Morty' });
   });
+
+  it('handles edge cases where data is missing structure', () => {
+       useCharactersHook.default.mockReturnValue({
+          loading: false,
+          error: null,
+          data: null // Force data to be null to test destructive destructuring protection
+        });
+
+        render(
+          <BrowserRouter>
+            <Characters />
+          </BrowserRouter>
+        );
+        
+        // Should verify it doesn't crash and acts as no results or similar
+        // Based on logic: const { results, info } = data || {};
+        // results will be undefined.
+        // !loading && !error && results?.length === 0 -> undefined?.length is undefined. Condition false.
+        // !loading && !error && results?.length > 0 -> undefined?.length > 0 is false.
+        // So it renders nothing or just header.
+        
+        expect(screen.getByRole('heading', { name: "Meet the cast" })).toBeInTheDocument();
+  });
 });
