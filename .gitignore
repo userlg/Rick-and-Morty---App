@@ -42,3 +42,6 @@ dist-ssr
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+yarn.lock
+package-lock.json

@@ -10,9 +10,9 @@
     "preview": "vite preview",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "predeploy": "npm run build",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d dist",
-    "homepage": "https://github.com/userlg/Rick-and-Morty---App"
+    "homepage": "https://userlg.github.io/Rick-and-Morty---App"
   },
   "dependencies": {
     "axios": "^1.13.2",

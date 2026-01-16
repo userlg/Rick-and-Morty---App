@@ -7,6 +7,8 @@
 
 A modern, responsive web application exploring the [Rick and Morty API](https://rickandmortyapi.com/). Built with React, Vite, and TailwindCSS v4, featuring a clean architecture and comprehensive testing.
 
+> **🚀 Live Demo:** [https://userlg.github.io/Rick-and-Morty---App](https://userlg.github.io/Rick-and-Morty---App)
+
 ## ✨ Features
 
 - **Character Search**: Real-time filtering and search functionality.
