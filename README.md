@@ -26,7 +26,7 @@ A modern, responsive web application exploring the [Rick and Morty API](https://
 
 ```bash
 # Clone the repository
-git clone https://github.com/userlg/rick-and-morty-app.git
+git clone https://github.com/userlg/Rick-and-Morty---App
 
 # Navigate to the project directory
 cd rick-and-morty-app
@@ -40,6 +40,17 @@ yarn install
 ```bash
 # Start the development server
 yarn dev
+```
+
+### 🐳 Docker
+
+You can also run the application in a Docker container.
+
+```bash
+# Build and start the container
+docker-compose up --build
+
+# The application will be available at http://localhost:3000
 ```
 
 ### 🧪 Running Tests

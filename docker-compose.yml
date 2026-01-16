@@ -1,0 +1,6 @@
+services:
+  app:
+    build: .
+    ports:
+      - "3000:80"
+    container_name: rick-and-morty-app
